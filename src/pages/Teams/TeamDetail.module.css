@@ -1,0 +1,154 @@
+.root { flex: 1; }
+
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
+}
+
+.headerInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.abbr {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 1px;
+  min-width: 3rem;
+}
+
+.name {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--text-1);
+  letter-spacing: -0.4px;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--text-3);
+  margin-top: 0.2rem;
+}
+
+.headerStats {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Body */
+.body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Roster */
+.rosterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.rosterCard {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.posGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.posLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding: 0.45rem 0.875rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.playerRow {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.875rem;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: background 0.1s;
+}
+
+.playerRow:last-child {
+  border-bottom: none;
+}
+
+.playerRow:hover {
+  background: var(--surface-hover);
+}
+
+.playerNum {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.playerName {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.playerHt {
+  font-size: 0.75rem;
+  color: var(--text-3);
+}
+
+.empty {
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+/* Games */
+.gamesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.gameList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .bodyGrid {
+    grid-template-columns: 1fr;
+  }
+}

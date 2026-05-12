@@ -1,0 +1,105 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.search {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  color: var(--text-1);
+  font-size: 0.8rem;
+  width: 180px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search::placeholder { color: var(--text-3); }
+.search:focus { border-color: var(--accent); }
+
+.select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  color: var(--text-1);
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.select:focus { border-color: var(--accent); }
+
+.jersey {
+  color: var(--text-3);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.playerLink {
+  color: var(--text-1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.playerLink:hover { color: var(--accent); }
+
+.teamLink {
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.teamLink:hover { color: var(--accent); }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.paginationInfo {
+  font-size: 0.8rem;
+  color: var(--text-3);
+  flex: 1;
+}
+
+.paginationControls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.pageBtn {
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--text-2);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.12s;
+}
+
+.pageBtn:hover:not(:disabled):not(.pageBtnActive) {
+  background: var(--surface-hover);
+  color: var(--text-1);
+}
+
+.pageBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pageBtnActive {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}

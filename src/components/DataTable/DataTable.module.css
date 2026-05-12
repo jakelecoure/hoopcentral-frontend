@@ -1,0 +1,87 @@
+.wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.table.compact {
+  font-size: 0.75rem;
+}
+
+.th {
+  padding: 0.6rem 0.875rem;
+  background: var(--surface);
+  color: var(--text-3);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+.sortable:hover {
+  color: var(--text-2);
+}
+
+.sortIcon {
+  display: inline-block;
+  margin-left: 0.3rem;
+  color: var(--text-3);
+  font-size: 0.65rem;
+  opacity: 0.4;
+}
+
+.sortActive {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+
+.tr:last-child {
+  border-bottom: none;
+}
+
+.tr:hover {
+  background: var(--surface-hover);
+}
+
+.td {
+  padding: 0.55rem 0.875rem;
+  color: var(--text-1);
+  white-space: nowrap;
+}
+
+.footerRow {
+  border-top: 1px solid var(--border-2);
+}
+
+.footerRow td {
+  padding: 0.55rem 0.875rem;
+  font-weight: 700;
+  background: var(--surface);
+  color: var(--text-1);
+  white-space: nowrap;
+}
+
+.empty {
+  color: var(--text-3);
+  text-align: center;
+  padding: 3rem;
+  font-size: 0.875rem;
+}

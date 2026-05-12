@@ -1,0 +1,205 @@
+.root {
+  flex: 1;
+}
+
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
+}
+
+.headerInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.matchup {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.teamBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.teamBlockRight {
+  align-items: flex-start;
+}
+
+.teamName {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--text-1);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+.teamName:hover {
+  color: var(--accent);
+}
+
+.homeAwayLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-3);
+  font-weight: 600;
+}
+
+.scoreBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 120px;
+}
+
+.scoreBlock > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scoreNum {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.winner {
+  color: var(--text-1);
+}
+
+.scoreDash {
+  font-size: 1.5rem;
+  color: var(--text-3);
+}
+
+.vsLabel {
+  font-size: 1rem;
+  color: var(--text-3);
+  font-weight: 600;
+}
+
+.statusBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+}
+
+.statusBadge.scheduled { background: var(--surface-hover); color: var(--text-3); }
+.statusBadge.live      { background: var(--accent-dim); color: var(--accent); }
+.statusBadge.final     { background: rgba(63, 185, 80, 0.1); color: var(--win); }
+
+/* Quarter scores */
+.quarters {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+.qRow {
+  display: grid;
+  grid-template-columns: 8rem repeat(4, 2.5rem) 2.5rem;
+  gap: 0;
+  padding: 0.55rem 0.875rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8125rem;
+  text-align: center;
+  color: var(--text-1);
+}
+
+.qRow:last-child {
+  border-bottom: none;
+}
+
+.qRow span:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.qHeader {
+  background: var(--surface);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  border-bottom: 1px solid var(--border-2);
+}
+
+.qTotal {
+  font-weight: 700;
+  color: var(--text-1);
+  border-left: 1px solid var(--border);
+}
+
+.arena {
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+/* Body */
+.body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.boxSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.boxTeam {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-3);
+}
+
+.playerLink {
+  color: var(--text-1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.playerLink:hover {
+  color: var(--accent);
+}
+
+.totalTd {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  color: var(--text-1);
+}
+
+.noBox {
+  text-align: center;
+  color: var(--text-3);
+  padding: 3rem;
+  font-size: 0.875rem;
+}

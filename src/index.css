@@ -1,0 +1,82 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:            #0d1117;
+  --surface:       #161b22;
+  --surface-2:     #1c2333;
+  --surface-hover: #21262d;
+  --border:        #21262d;
+  --border-2:      #30363d;
+
+  --accent:        #e85d04;
+  --accent-hover:  #f48c06;
+  --accent-dim:    rgba(232, 93, 4, 0.13);
+
+  --text-1:        #e6edf3;
+  --text-2:        #8b949e;
+  --text-3:        #484f58;
+
+  --win:           #3fb950;
+  --loss:          #f85149;
+  --live-color:    #e85d04;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto,
+               Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p { margin: 0; }
+
+/* ── Shared utility classes ────────────────────────────────────────────── */
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.section-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 0.75rem;
+}

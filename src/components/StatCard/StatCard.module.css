@@ -1,0 +1,35 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card.accent {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-1);
+  line-height: 1;
+}
+
+.sub {
+  font-size: 0.75rem;
+  color: var(--text-2);
+  margin-top: 0.15rem;
+}
