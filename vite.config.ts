@@ -1,9 +1,3 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000,
-  },
-});
+// Vite config is no longer used. The app now runs on Next.js 15.
+// See next.config.ts for the Next.js configuration.
+export {}

@@ -1,6 +1,2 @@
-import { apiFetch } from './client';
-import type { Standing } from '../types';
-
-export function fetchStandings(league: string): Promise<Standing[]> {
-  return apiFetch<Standing[]>(`/standings?league=${encodeURIComponent(league)}`);
-}
+// Replaced by src/lib/api/standings.ts
+export { fetchStandings } from '@/lib/api/standings'

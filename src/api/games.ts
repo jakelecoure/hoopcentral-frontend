@@ -1,10 +1,2 @@
-import { apiFetch } from './client';
-import type { Game, GameDetail } from '../types';
-
-export function fetchGames(league: string): Promise<Game[]> {
-  return apiFetch<Game[]>(`/games?league=${encodeURIComponent(league)}`);
-}
-
-export function fetchGame(id: string | number, league: string): Promise<GameDetail> {
-  return apiFetch<GameDetail>(`/games/${id}?league=${encodeURIComponent(league)}`);
-}
+// Replaced by src/lib/api/games.ts
+export { fetchGames, fetchGame } from '@/lib/api/games'
